@@ -19,30 +19,32 @@
     var CONFIG = {"hostname":"ym-zhong.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="欢迎来到我的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="zhongym&#39;s blog">
-<meta property="og:url" content="https://ym-zhong.github.io/index.html">
+  <meta name="description" content="栈 栈的定义&amp;emsp;&amp;emsp;栈是一种后进先出的数据结构。 我们只能对栈顶进行入栈和出栈操作。    栈的实现   用数组实现栈   用链表实现栈    栈的应用   括号匹配：12345678910111213141516171819202122232425262728293031323334353637383940414243444546#include &lt;stack&gt;usi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="栈">
+<meta property="og:url" content="https://ym-zhong.github.io/2020/11/17/%E6%A0%88/index.html">
 <meta property="og:site_name" content="zhongym&#39;s blog">
-<meta property="og:description" content="欢迎来到我的博客">
+<meta property="og:description" content="栈 栈的定义&amp;emsp;&amp;emsp;栈是一种后进先出的数据结构。 我们只能对栈顶进行入栈和出栈操作。    栈的实现   用数组实现栈   用链表实现栈    栈的应用   括号匹配：12345678910111213141516171819202122232425262728293031323334353637383940414243444546#include &lt;stack&gt;usi">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-11-17T12:01:54.000Z">
+<meta property="article:modified_time" content="2020-11-17T12:04:43.121Z">
 <meta property="article:author" content="zhongym">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://ym-zhong.github.io/">
+<link rel="canonical" href="https://ym-zhong.github.io/2020/11/17/%E6%A0%88/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>zhongym's blog</title>
+  <title>栈 | zhongym's blog</title>
   
 
 
@@ -145,91 +147,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ym-zhong.github.io/2020/11/17/%E9%98%9F%E5%88%97/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/header.jpg">
-      <meta itemprop="name" content="zhongym">
-      <meta itemprop="description" content="欢迎来到我的博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="zhongym's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/11/17/%E9%98%9F%E5%88%97/" class="post-title-link" itemprop="url">队列</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-11-17 20:06:09 / 修改时间：20:06:35" itemprop="dateCreated datePublished" datetime="2020-11-17T20:06:09+08:00">2020-11-17</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h1><ul>
-<li><h2 id="队列的定义"><a href="#队列的定义" class="headerlink" title="队列的定义"></a>队列的定义</h2>&emsp;&emsp;队列是一种<strong>先进先出的</strong>的数据结构。我们可以对队头进行出队操作，对队尾进行入队操作。</li>
-</ul>
-<hr>
-<ul>
-<li><h2 id="队列的实现"><a href="#队列的实现" class="headerlink" title="队列的实现"></a>队列的实现</h2></li>
-</ul>
-<ol>
-<li>用数组实现队列  </li>
-<li>用链表实现队列</li>
-</ol>
-<hr>
-<ul>
-<li><h2 id="循环队列的实现"><a href="#循环队列的实现" class="headerlink" title="循环队列的实现"></a>循环队列的实现</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;vector&gt;</span><br><span class="line"></span><br><span class="line">class MyCircularQueue &#123;</span><br><span class="line">private:</span><br><span class="line">    int head, tail, size;</span><br><span class="line">    int* data;</span><br><span class="line"></span><br><span class="line">public:</span><br><span class="line">    MyCircularQueue(int size_): head(0), tail(0), size(size_+1), data(nullptr) &#123;</span><br><span class="line">        data &#x3D; new int[size];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    bool enQueue(int value) &#123;</span><br><span class="line">        if (this-&gt;isFull()) &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        data[tail] &#x3D; value;</span><br><span class="line">        ++tail;</span><br><span class="line">        tail %&#x3D; size;</span><br><span class="line">        </span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    bool deQueue() &#123;</span><br><span class="line">        if (this-&gt;isEmpty()) &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        ++head;</span><br><span class="line">        head %&#x3D; size;</span><br><span class="line">        </span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    int Front() &#123;</span><br><span class="line">        if (this-&gt;isEmpty()) &#123;</span><br><span class="line">            return -1;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return data[head];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    int Rear() &#123;</span><br><span class="line">        if (this-&gt;isEmpty()) &#123;</span><br><span class="line">            return -1;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return data[(tail + size - 1) % size];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    bool isEmpty() &#123;</span><br><span class="line">        if (head &#x3D;&#x3D; tail) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    bool isFull() &#123;</span><br><span class="line">        if ((tail + 1) % size &#x3D;&#x3D; head) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    ~MyCircularQueue() &#123;</span><br><span class="line">        delete []data;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -245,10 +166,9 @@
       <meta itemprop="name" content="zhongym's blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/11/17/%E6%A0%88/" class="post-title-link" itemprop="url">栈</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          栈
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -281,7 +201,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h1><ul>
+        <h1 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h1><ul>
 <li><h2 id="栈的定义"><a href="#栈的定义" class="headerlink" title="栈的定义"></a>栈的定义</h2>&emsp;&emsp;栈是一种<strong>后进先出</strong>的数据结构。 我们只能对栈顶进行入栈和出栈操作。</li>
 </ul>
 <hr>
@@ -304,96 +224,33 @@
 <li><h3 id="将中缀表达式转换为逆波兰式"><a href="#将中缀表达式转换为逆波兰式" class="headerlink" title="将中缀表达式转换为逆波兰式"></a>将中缀表达式转换为逆波兰式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;vector&gt;</span><br><span class="line">#include &lt;string&gt;</span><br><span class="line">#include &lt;stack&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">vector&lt;string&gt; toRPN(const string&amp; s) &#123;</span><br><span class="line">        vector&lt;string&gt; rpn;</span><br><span class="line">        stack&lt;string&gt; stackOfoperator;</span><br><span class="line"></span><br><span class="line">        for (int i &#x3D; 0; i &lt; s.size(); ++i) &#123;</span><br><span class="line">            if (s[i] &#x3D;&#x3D; &#39;+&#39;) &#123;</span><br><span class="line">                while (!stackOfoperator.empty()) &#123;</span><br><span class="line">                    rpn.push_back(stackOfoperator.top());</span><br><span class="line">                    stackOfoperator.pop();</span><br><span class="line">                &#125;</span><br><span class="line">                stackOfoperator.push(&quot;+&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">            else if (s[i] &#x3D;&#x3D; &#39;-&#39;) &#123;</span><br><span class="line">                while (!stackOfoperator.empty()) &#123;</span><br><span class="line">                    rpn.push_back(stackOfoperator.top());</span><br><span class="line">                    stackOfoperator.pop();</span><br><span class="line">                &#125;</span><br><span class="line">                stackOfoperator.push(&quot;-&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">            else if (s[i] &#x3D;&#x3D; &#39;*&#39;) &#123;</span><br><span class="line">                while (!stackOfoperator.empty() &amp;&amp; stackOfoperator.top() !&#x3D; &quot;+&quot; &amp;&amp; stackOfoperator.top() !&#x3D; &quot;-&quot;) &#123;</span><br><span class="line">                    rpn.push_back(stackOfoperator.top());</span><br><span class="line">                    stackOfoperator.pop();</span><br><span class="line">                &#125;</span><br><span class="line">                stackOfoperator.push(&quot;*&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">            else if (s[i] &#x3D;&#x3D; &#39;&#x2F;&#39;) &#123;</span><br><span class="line">                while (!stackOfoperator.empty() &amp;&amp; stackOfoperator.top() !&#x3D; &quot;+&quot; &amp;&amp; stackOfoperator.top() !&#x3D; &quot;-&quot;) &#123;</span><br><span class="line">                    rpn.push_back(stackOfoperator.top());</span><br><span class="line">                    stackOfoperator.pop();</span><br><span class="line">                &#125;</span><br><span class="line">                stackOfoperator.push(&quot;&#x2F;&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">            else &#123;</span><br><span class="line">                string nums;</span><br><span class="line">                int j &#x3D; i;</span><br><span class="line"></span><br><span class="line">                while (s[j] &gt;&#x3D; &#39;0&#39; &amp;&amp; s[j] &lt;&#x3D; &#39;9&#39;) &#123;</span><br><span class="line">                    nums.push_back(s[j++]);</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                i &#x3D; j - 1;</span><br><span class="line">                rpn.push_back(nums);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        while (!stackOfoperator.empty()) &#123;</span><br><span class="line">            rpn.push_back(stackOfoperator.top());</span><br><span class="line">            stackOfoperator.pop();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return rpn;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ym-zhong.github.io/2020/11/17/%E6%88%91%E6%98%AF%E8%94%A1%E5%AE%B6%E5%AE%9D/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/header.jpg">
-      <meta itemprop="name" content="zhongym">
-      <meta itemprop="description" content="欢迎来到我的博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="zhongym's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/11/17/%E6%88%91%E6%98%AF%E8%94%A1%E5%AE%B6%E5%AE%9D/" class="post-title-link" itemprop="url">自我介绍</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-11-17 00:07:05 / 修改时间：19:11:42" itemprop="dateCreated datePublished" datetime="2020-11-17T00:07:05+08:00">2020-11-17</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%B5%8B%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">测试</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>&emsp;&emsp;大家好，我是蔡家宝，今年19岁，性别男，爱好女，无配偶，规格是175*1.75cm,目前就读于广东某双非二本。<br>&emsp;&emsp;我的爱好是唱情歌，跳街舞和打垒球。<br>&emsp;&emsp;我的电话号码是34720110。欢迎大家来撩我~</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/11/17/%E6%88%91%E6%98%AF%E8%94%A1%E5%AE%B6%E5%AE%9D/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/11/17/%E6%88%91%E6%98%AF%E8%94%A1%E5%AE%B6%E5%AE%9D/" rel="prev" title="自我介绍">
+      <i class="fa fa-chevron-left"></i> 自我介绍
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/11/17/%E9%98%9F%E5%88%97/" rel="next" title="队列">
+      队列 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -446,6 +303,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%88"><span class="nav-number">1.</span> <span class="nav-text">栈</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%88%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-number">1.1.</span> <span class="nav-text">栈的定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%88%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.2.</span> <span class="nav-text">栈的实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%88%E7%9A%84%E5%BA%94%E7%94%A8"><span class="nav-number">1.3.</span> <span class="nav-text">栈的应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8B%AC%E5%8F%B7%E5%8C%B9%E9%85%8D%EF%BC%9A"><span class="nav-number">1.3.1.</span> <span class="nav-text">括号匹配：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%86%E6%B3%A2%E5%85%B0%E5%BC%8F%E6%B1%82%E5%80%BC"><span class="nav-number">1.3.2.</span> <span class="nav-text">逆波兰式求值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B0%86%E4%B8%AD%E7%BC%80%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%BD%AC%E6%8D%A2%E4%B8%BA%E9%80%86%E6%B3%A2%E5%85%B0%E5%BC%8F"><span class="nav-number">1.3.3.</span> <span class="nav-text">将中缀表达式转换为逆波兰式</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
