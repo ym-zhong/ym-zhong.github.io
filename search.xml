@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>队列</title>
+    <url>/2020/11/17/queue/</url>
+    <content><![CDATA[<h1 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h1><ul>
+<li><h2 id="队列的定义"><a href="#队列的定义" class="headerlink" title="队列的定义"></a>队列的定义</h2>&emsp;&emsp;队列是一种<strong>先进先出的</strong>的数据结构。<a id="more"></a>我们可以对队头进行出队操作，对队尾进行入队操作。</li>
+</ul>
+<hr>
+<ul>
+<li><h2 id="队列的实现"><a href="#队列的实现" class="headerlink" title="队列的实现"></a>队列的实现</h2></li>
+</ul>
+<ol>
+<li>用数组实现队列  </li>
+<li>用链表实现队列</li>
+</ol>
+<hr>
+<ul>
+<li><h2 id="循环队列的实现"><a href="#循环队列的实现" class="headerlink" title="循环队列的实现"></a>循环队列的实现</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include &lt;vector&gt;</span><br><span class="line"></span><br><span class="line">class MyCircularQueue &#123;</span><br><span class="line">private:</span><br><span class="line">    int head, tail, size;</span><br><span class="line">    int* data;</span><br><span class="line"></span><br><span class="line">public:</span><br><span class="line">    MyCircularQueue(int size_): head(0), tail(0), size(size_+1), data(nullptr) &#123;</span><br><span class="line">        data &#x3D; new int[size];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    bool enQueue(int value) &#123;</span><br><span class="line">        if (this-&gt;isFull()) &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        data[tail] &#x3D; value;</span><br><span class="line">        ++tail;</span><br><span class="line">        tail %&#x3D; size;</span><br><span class="line">        </span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    bool deQueue() &#123;</span><br><span class="line">        if (this-&gt;isEmpty()) &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        ++head;</span><br><span class="line">        head %&#x3D; size;</span><br><span class="line">        </span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    int Front() &#123;</span><br><span class="line">        if (this-&gt;isEmpty()) &#123;</span><br><span class="line">            return -1;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return data[head];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    int Rear() &#123;</span><br><span class="line">        if (this-&gt;isEmpty()) &#123;</span><br><span class="line">            return -1;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return data[(tail + size - 1) % size];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    bool isEmpty() &#123;</span><br><span class="line">        if (head &#x3D;&#x3D; tail) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    bool isFull() &#123;</span><br><span class="line">        if ((tail + 1) % size &#x3D;&#x3D; head) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    ~MyCircularQueue() &#123;</span><br><span class="line">        delete []data;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>并查集</title>
+    <url>/2020/11/18/disjoint_sets/</url>
+    <content><![CDATA[<p><img src="/.io//photo1.png" alt="photo1"></p>
+]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+  </entry>
+  <entry>
     <title>自我介绍</title>
     <url>/2020/11/17/CaiJiaBao/</url>
     <content><![CDATA[<p>&emsp;&emsp;大家好，我是蔡家宝。<a id="more"></a>今年19岁，性别男，爱好女，无配偶，规格是175*1.75cm,目前就读于广东某双非二本。<br>&emsp;&emsp;我的爱好是唱情歌，跳街舞和打垒球。<br>&emsp;&emsp;我的电话号码是34720110。欢迎大家来撩我~</p>
@@ -34,29 +66,6 @@
 </li>
 <li><h3 id="将中缀表达式转换为逆波兰式"><a href="#将中缀表达式转换为逆波兰式" class="headerlink" title="将中缀表达式转换为逆波兰式"></a>将中缀表达式转换为逆波兰式</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include &lt;vector&gt;</span><br><span class="line">#include &lt;string&gt;</span><br><span class="line">#include &lt;stack&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">vector&lt;string&gt; toRPN(const string&amp; s) &#123;</span><br><span class="line">        vector&lt;string&gt; rpn;</span><br><span class="line">        stack&lt;string&gt; stackOfoperator;</span><br><span class="line"></span><br><span class="line">        for (int i &#x3D; 0; i &lt; s.size(); ++i) &#123;</span><br><span class="line">            if (s[i] &#x3D;&#x3D; &#39;+&#39;) &#123;</span><br><span class="line">                while (!stackOfoperator.empty()) &#123;</span><br><span class="line">                    rpn.push_back(stackOfoperator.top());</span><br><span class="line">                    stackOfoperator.pop();</span><br><span class="line">                &#125;</span><br><span class="line">                stackOfoperator.push(&quot;+&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">            else if (s[i] &#x3D;&#x3D; &#39;-&#39;) &#123;</span><br><span class="line">                while (!stackOfoperator.empty()) &#123;</span><br><span class="line">                    rpn.push_back(stackOfoperator.top());</span><br><span class="line">                    stackOfoperator.pop();</span><br><span class="line">                &#125;</span><br><span class="line">                stackOfoperator.push(&quot;-&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">            else if (s[i] &#x3D;&#x3D; &#39;*&#39;) &#123;</span><br><span class="line">                while (!stackOfoperator.empty() &amp;&amp; stackOfoperator.top() !&#x3D; &quot;+&quot; &amp;&amp; stackOfoperator.top() !&#x3D; &quot;-&quot;) &#123;</span><br><span class="line">                    rpn.push_back(stackOfoperator.top());</span><br><span class="line">                    stackOfoperator.pop();</span><br><span class="line">                &#125;</span><br><span class="line">                stackOfoperator.push(&quot;*&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">            else if (s[i] &#x3D;&#x3D; &#39;&#x2F;&#39;) &#123;</span><br><span class="line">                while (!stackOfoperator.empty() &amp;&amp; stackOfoperator.top() !&#x3D; &quot;+&quot; &amp;&amp; stackOfoperator.top() !&#x3D; &quot;-&quot;) &#123;</span><br><span class="line">                    rpn.push_back(stackOfoperator.top());</span><br><span class="line">                    stackOfoperator.pop();</span><br><span class="line">                &#125;</span><br><span class="line">                stackOfoperator.push(&quot;&#x2F;&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">            else &#123;</span><br><span class="line">                string nums;</span><br><span class="line">                int j &#x3D; i;</span><br><span class="line"></span><br><span class="line">                while (s[j] &gt;&#x3D; &#39;0&#39; &amp;&amp; s[j] &lt;&#x3D; &#39;9&#39;) &#123;</span><br><span class="line">                    nums.push_back(s[j++]);</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                i &#x3D; j - 1;</span><br><span class="line">                rpn.push_back(nums);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        while (!stackOfoperator.empty()) &#123;</span><br><span class="line">            rpn.push_back(stackOfoperator.top());</span><br><span class="line">            stackOfoperator.pop();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return rpn;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
-]]></content>
-      <categories>
-        <category>数据结构</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>队列</title>
-    <url>/2020/11/17/queue/</url>
-    <content><![CDATA[<h1 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h1><ul>
-<li><h2 id="队列的定义"><a href="#队列的定义" class="headerlink" title="队列的定义"></a>队列的定义</h2>&emsp;&emsp;队列是一种<strong>先进先出的</strong>的数据结构。<a id="more"></a>我们可以对队头进行出队操作，对队尾进行入队操作。</li>
-</ul>
-<hr>
-<ul>
-<li><h2 id="队列的实现"><a href="#队列的实现" class="headerlink" title="队列的实现"></a>队列的实现</h2></li>
-</ul>
-<ol>
-<li>用数组实现队列  </li>
-<li>用链表实现队列</li>
-</ol>
-<hr>
-<ul>
-<li><h2 id="循环队列的实现"><a href="#循环队列的实现" class="headerlink" title="循环队列的实现"></a>循环队列的实现</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include &lt;vector&gt;</span><br><span class="line"></span><br><span class="line">class MyCircularQueue &#123;</span><br><span class="line">private:</span><br><span class="line">    int head, tail, size;</span><br><span class="line">    int* data;</span><br><span class="line"></span><br><span class="line">public:</span><br><span class="line">    MyCircularQueue(int size_): head(0), tail(0), size(size_+1), data(nullptr) &#123;</span><br><span class="line">        data &#x3D; new int[size];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    bool enQueue(int value) &#123;</span><br><span class="line">        if (this-&gt;isFull()) &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        data[tail] &#x3D; value;</span><br><span class="line">        ++tail;</span><br><span class="line">        tail %&#x3D; size;</span><br><span class="line">        </span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    bool deQueue() &#123;</span><br><span class="line">        if (this-&gt;isEmpty()) &#123;</span><br><span class="line">            return false;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        ++head;</span><br><span class="line">        head %&#x3D; size;</span><br><span class="line">        </span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    int Front() &#123;</span><br><span class="line">        if (this-&gt;isEmpty()) &#123;</span><br><span class="line">            return -1;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return data[head];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    int Rear() &#123;</span><br><span class="line">        if (this-&gt;isEmpty()) &#123;</span><br><span class="line">            return -1;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return data[(tail + size - 1) % size];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    bool isEmpty() &#123;</span><br><span class="line">        if (head &#x3D;&#x3D; tail) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    bool isFull() &#123;</span><br><span class="line">        if ((tail + 1) % size &#x3D;&#x3D; head) &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    ~MyCircularQueue() &#123;</span><br><span class="line">        delete []data;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
-</ul>
 ]]></content>
       <categories>
         <category>数据结构</category>
