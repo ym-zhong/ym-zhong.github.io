@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>自我介绍</title>
+    <url>/2020/11/17/CaiJiaBao/</url>
+    <content><![CDATA[<p>&emsp;&emsp;大家好，我是蔡家宝。<a id="more"></a>今年19岁，性别男，爱好女，无配偶，规格是175*1.75cm,目前就读于广东某双非二本。<br>&emsp;&emsp;我的爱好是唱情歌，跳街舞和打垒球。<br>&emsp;&emsp;我的电话号码是34720110。欢迎大家来撩我~</p>
+<!--more-->]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+  </entry>
+  <entry>
     <title>队列</title>
     <url>/2020/11/17/queue/</url>
     <content><![CDATA[<h1 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h1><ul>
@@ -21,24 +30,6 @@
 ]]></content>
       <categories>
         <category>数据结构</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>并查集</title>
-    <url>/2020/11/18/disjoint_sets/</url>
-    <content><![CDATA[<p><img src="/.io//photo1.png" alt="photo1"></p>
-]]></content>
-      <categories>
-        <category>数据结构</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>自我介绍</title>
-    <url>/2020/11/17/CaiJiaBao/</url>
-    <content><![CDATA[<p>&emsp;&emsp;大家好，我是蔡家宝。<a id="more"></a>今年19岁，性别男，爱好女，无配偶，规格是175*1.75cm,目前就读于广东某双非二本。<br>&emsp;&emsp;我的爱好是唱情歌，跳街舞和打垒球。<br>&emsp;&emsp;我的电话号码是34720110。欢迎大家来撩我~</p>
-<!--more-->]]></content>
-      <categories>
-        <category>测试</category>
       </categories>
   </entry>
   <entry>
